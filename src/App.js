@@ -7,6 +7,7 @@ import Navbar from './componets/NavBar';
 import Hero from './componets/Hero';
 import Footer from './componets/footer';
 import ProjectGrid from './componets/ProjectGrid';
+import UserCard from './componets/UserCard';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <box>
         <box><Navbar/></box>
         <box><Hero/></box>
-
+        <box><UserCard/></box>
           <box>
               <ProjectGrid/>
           </box>

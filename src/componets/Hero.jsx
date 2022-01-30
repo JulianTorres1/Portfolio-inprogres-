@@ -21,7 +21,10 @@ import logo from '../img/logo.png';
 
 
 
+
 export default function Hero() {
+
+
     return (
         <>
             <Head>
@@ -47,28 +50,17 @@ export default function Hero() {
                         fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                         lineHeight={'110%'}>
                         Nicolas Torres <br />
-                        <Text fontSize='30px' as={'span'} color={'#D95323'}>
+                        <Text bgGradient='linear(to-l, #000000, #F6834E, #000000)' bgClip='text' fontSize='30px' as={'span'} >
                             Software Engineer
                         </Text>
                     </Heading>
-                    <Center>
-                        <Image
-                            src={yo}
-                            alt='imagen no encontrada'
-                            borderRadius='full'
-                            boxSize='100px'
-                            mt={2}
-                            mb={2}
-                        />
-                    </Center>
                     <Text color={'gray.500'}>
-                        Hello, I'm a Software Engineer, and web dev developer based in Colombia!
-                    </Text>
-                    <Text>
-                        Nicolas is a freelance and a Software Engineer, and web dev  based in Cartagena with a passion for building digital services/stuff he wants.  From planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his studying Software Engineer career in Cartagena university
+                        Hello, I'm a Software Engineer, and web dev developer based in Colombia 🇨🇴!
                     </Text>
 
+
                 </Stack>
+
             </Container>
         </>
     );

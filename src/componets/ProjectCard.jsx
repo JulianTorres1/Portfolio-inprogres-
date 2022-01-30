@@ -49,7 +49,7 @@ function ProjetCard(props) {
                         fontWeight={800}
                         fontSize={'sm'}
                         letterSpacing={1.1}>
-                        Blog
+                        Project
                     </Text>
                     <Heading
                         color={useColorModeValue('gray.700', 'white')}

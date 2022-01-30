@@ -25,7 +25,9 @@ import logo from '../img/logo.png';
 
 //icons imports an function
 import {Camera, Instagram, Twitter, Youtube} from 'react-feather';
-import {AttachmentIcon} from '@chakra-ui/icons'
+
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 
 //hoppla
@@ -53,8 +55,8 @@ export default function Nav() {
         <>
             <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-                    <Box mt={6} >
-                        <Image boxSize='100px' src={logo} alt='Logo-not-found' />
+                    <Box mt={2} >
+                        <Image boxSize='50px' src={logo} alt='Logo-not-found' />
                     </Box>
                     <Spacer />
 
@@ -68,10 +70,10 @@ export default function Nav() {
                     </Flex>
 
 
-                    <Flex mr={3} href='https://chakra-ui.com' isExternal alignItems={'center'}>
+                    <Flex mr={3} alignItems={'center'}>
                         <Stack direction={'row'} spacing={7}>
                             <Button>
-                                <Link href='https://www.instagram.com/julian_torres362/'>
+                                <Link isExternal href='https://www.instagram.com/julian_torres362/'>
                                     <Instagram w={6} h={6} />
                                 </Link>
                             </Button>
@@ -79,20 +81,20 @@ export default function Nav() {
                     </Flex>
 
 
-                    <Flex mr={3} href='https://chakra-ui.com' isExternal alignItems={'center'}>
+                    <Flex mr={3}  alignItems={'center'}>
                         <Stack direction={'row'} spacing={7}>
                             <Button>
-                                <Link href='https://chakra-ui.com'>
-                                    <Youtube w={6} h={6} />
+                                <Link isExternal href='https://github.com/JulianTorres1'>
+                                    <GitHubIcon w={6} h={6} />
                                 </Link>
                             </Button>
                         </Stack>
                     </Flex>
 
-                    <Flex mr={3} href='https://chakra-ui.com' isExternal alignItems={'center'}>
+                    <Flex mr={3} alignItems={'center'}>
                         <Stack direction={'row'} spacing={7}>
                             <Button>
-                                <Link href='https://twitter.com/nicolastorrest6'>
+                                <Link isExternal href='https://twitter.com/nicolastorrest6'>
                                     <Twitter w={6} h={6} />
                                 </Link>
                             </Button>
