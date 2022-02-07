@@ -1,30 +1,21 @@
-import React, { ReactNode, Component } from 'react';
+import React from 'react';
 import {
     Box,
     Image,
     Flex,
-    Avatar,
-    Icon,
     Link,
     Button,
     Spacer,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuDivider,
-    useDisclosure,
     useColorModeValue,
     Stack,
     useColorMode,
-    Center,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 //import images
 import logo from '../img/logo.png';
 
 //icons imports an function
-import {Camera, Instagram, Twitter, Youtube} from 'react-feather';
+import { Instagram, Twitter } from 'react-feather';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -33,27 +24,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 //hoppla
 
 //Component
-
-const NavLink = ({ children }: { children: ReactNode }) => (
-    <Link
-        px={2}
-        py={1}
-        rounded={'md'}
-        _hover={{
-            textDecoration: 'none',
-            bg: useColorModeValue('gray.200', 'gray.700'),
-        }}
-        href={'#'}>
-        {children}
-    </Link>
-);
-
 export default function Nav() {
     const { colorMode, toggleColorMode } = useColorMode();
-    const { isOpen, onOpen, onClose } = useDisclosure();
     return (
         <>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+            <Box sticky="top" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <Box mt={2} >
                         <Image boxSize='50px' src={logo} alt='Logo-not-found' />

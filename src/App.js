@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 // componets
@@ -8,6 +7,7 @@ import Hero from './componets/Hero';
 import Footer from './componets/footer';
 import ProjectGrid from './componets/ProjectGrid';
 import UserCard from './componets/UserCard';
+import Specs from './componets/specs';
 
 function App() {
   return (
@@ -19,6 +19,10 @@ function App() {
           <box>
               <ProjectGrid/>
           </box>
+          <box>
+              <Specs/>
+          </box>
+
         <box><Footer/></box>
 
       </box>

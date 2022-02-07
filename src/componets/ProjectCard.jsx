@@ -1,20 +1,15 @@
 import React from "react";
 import {
     Box,
-    Flex,
-    AspectRatio,
     Image,
     Text,
-    Link,
-    Button,
-    Stack, useColorModeValue, Center, Heading, Avatar
+    Stack, useColorModeValue, Center, Heading
 } from "@chakra-ui/react";
 
 //import imgs
-import photoProjet1 from '../img/project1.png'
-
 function ProjetCard(props) {
-    const { product, summary, longLine } = props;
+    // eslint-disable-next-line no-empty-pattern
+    const {} = props;
 
 
 

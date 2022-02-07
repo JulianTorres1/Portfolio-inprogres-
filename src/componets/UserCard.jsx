@@ -2,22 +2,9 @@ import {
     Badge,
     Button,
     Center,
-    Flex,
-    Heading,
-    Image,
-    Link,
     Stack,
-    Text, useColorMode,
-    useColorModeValue,
+    Text,
 } from '@chakra-ui/react';
-
-function StyleColorMode() {
-    const { toggleColorMode } = useColorMode()
-
-    const bg = useColorModeValue('red.500', 'red.200')
-    const color = useColorModeValue('white', 'gray.800')
-}
-
 export default function socialProfileWithImageHorizontal() {
 
 

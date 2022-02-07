@@ -3,19 +3,15 @@ import {
     Box,
     Center,
     Image,
-    Img,
     Heading,
     Container,
     Text,
-    Button,
     Stack,
-    Icon,
-    useColorModeValue,
     createIcon,
 } from '@chakra-ui/react';
 
 //imgs
-import yo from '../img/me.jpg';
+
 import logo from '../img/logo.png';
 
 
@@ -32,6 +28,7 @@ export default function Hero() {
                     href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
                     rel="stylesheet"
                 />
+                <title>hola</title>
             </Head>
 
             <Container maxW={'3xl'}>
@@ -65,8 +62,7 @@ export default function Hero() {
         </>
     );
 }
-
-const Arrow = createIcon({
+createIcon({
     displayName: 'Arrow',
     viewBox: '0 0 72 24',
     path: (

@@ -1,18 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import {
     Box,
     Center,
-    color,
     Container,
-    extendTheme,
     Heading,
     SimpleGrid,
-    Text,
-    useBreakpointValue,
-    useColorMode
+    Text
+
 } from "@chakra-ui/react";
-import ProjetCard from "./ProjectCard.jsx";
 import ProjectCard from "./ProjectCard.jsx";
 
 class HelloMessage extends React.Component {
@@ -44,7 +39,7 @@ class HelloMessage extends React.Component {
 
 
                 <Container  maxW='container.lg'>
-                    <SimpleGrid columns={3} spacing={10}>
+                    <SimpleGrid columns={[2, 1, 3]} spacing={10}>
                         <Box  ><ProjectCard/></Box>
                         <Box  ><ProjectCard/></Box>
                         <Box  ><ProjectCard/></Box>
