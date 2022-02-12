@@ -8,6 +8,7 @@ import Footer from './componets/footer';
 import ProjectGrid from './componets/ProjectGrid';
 import UserCard from './componets/UserCard';
 import Specs from './componets/specs';
+import  ContactForm from './componets/ContactForm';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
           </box>
           <box>
               <Specs/>
+          </box>
+
+          <box>
+              <ContactForm/>
           </box>
 
         <box><Footer/></box>

@@ -9,16 +9,16 @@ export default function socialProfileWithImageHorizontal() {
 
 
     return (
-        <Center py={6}>
+        <Center paddingBottom={20}>
             <Stack
                 borderWidth="1px"
                 borderRadius="lg"
-                w={{ sm: '100%', md: '540px' }}
+                w={{ sm: '100%', md: '650px' }}
                 height={{ sm: '476px', md: '20rem' }}
                 direction={{ base: 'column', md: 'row' }}
 
                 boxShadow={'2xl'}
-                padding={4}>
+                padding={6}>
                 <Stack
                     flex={1}
                     flexDirection="column"
@@ -28,6 +28,7 @@ export default function socialProfileWithImageHorizontal() {
                     pt={2}>
 
                     <Text
+                        fontSize={20}
                         textAlign={'center'}
 
                         px={3}>

@@ -7,12 +7,14 @@ import {
     Container,
     Text,
     Stack,
-    createIcon,
+    chakra,
+    createIcon, Flex, useColorModeValue, Button,
 } from '@chakra-ui/react';
 
 //imgs
 
 import logo from '../img/logo.png';
+import Baner from '../img/project1.png'
 
 
 
@@ -23,42 +25,108 @@ export default function Hero() {
 
     return (
         <>
-            <Head>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-                    rel="stylesheet"
-                />
-                <title>hola</title>
-            </Head>
 
-            <Container maxW={'3xl'}>
-                <Stack
-                    as={Box}
-                    textAlign={'center'}
-                    spacing={{ base: 20, md: 0}}
-                    py={{ base: 2, md: 5 }}>
+            <Flex
 
-                    <Center>
-                        <Image boxSize='200px' src={logo} alt='img not found' />
-                    </Center>
+                direction={{ base: "column", md: "row" }}
+                bg={useColorModeValue("brand.500")}
+                px={8}
+                py={20}
+                mx="auto"
+                bg='gray.80'
+            >
+                <Box
 
-                    <Heading
-                        fontWeight={600}
-                        fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-                        lineHeight={'110%'}>
-                        Nicolas Torres <br />
-                        <Text bgGradient='linear(to-l, #000000, #F6834E, #000000)' bgClip='text' fontSize='30px' as={'span'} >
-                            Software Engineer
-                        </Text>
-                    </Heading>
-                    <Text color={'gray.500'}>
-                        Hello, I'm a Software Engineer, and web dev developer based in Colombia 🇨🇴!
-                    </Text>
+                    w={{ base: "full", md: 3 / 12, xl: 9 / 12 }}
+                    mx="auto"
+                    pr={{ md: 20 }}
+
+                >
+
+                    <Head>
+                        <link
+                            href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+                            rel="stylesheet"
+                        />
+                        <title>hola</title>
+                    </Head>
+
+                    <Container maxW={'3xl'} >
+                        <Stack
+                            as={Box}
+                            textAlign={'center'}
+                            spacing={{ base: 20, md: 0}}
+                            py={{ base: 2, md: 5 }}>
+
+                            <Center>
+                                <Image boxSize='150px' src={logo} alt='img not found' />
+                            </Center>
+
+                            <Heading
+                                fontWeight={600}
+                                fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+                                lineHeight={'110%'}>
+                                Nicolas Torres <br />
+                                <Text bgGradient='linear(to-l, #000000, #F6834E, #000000)' bgClip='text' fontSize='30px' as={'span'} >
+                                    Software Engineer
+                                </Text>
+                            </Heading>
+                            <Text color={'gray.500'}>
+                                Hello, I'm a Software Engineer, and web dev developer based in Colombia 🇨🇴!
+                            </Text>
+
+                            <box>
 
 
-                </Stack>
+                                <Button
+                                    mt={5}
+                                    flex={1}
+                                    fontSize={'sm'}
+                                    rounded={'full'}
+                                    bg={'#D9541B'}
+                                    color={'white'}
+                                    boxShadow={
+                                        '0px 1px 25px -5px rgb(217 84 27 / 48%), 0 10px 10px -5px rgb(245 118 55 / 43%)'
+                                    }
+                                    _hover={{
+                                        bg: '#F57637',
+                                    }}
+                                    _focus={{
+                                        bg: '#F57637',
+                                    }}>
+                                    Download CV
+                                </Button>
 
-            </Container>
+
+
+                            </box>
+
+
+                        </Stack>
+
+                    </Container>
+
+                    <Stack
+                        direction={{ base: "column", sm: "row" }}
+                        mb={{ base: 4, md: 8 }}
+                        spacing={2}
+                    >
+
+                    </Stack>
+                </Box>
+                <Box w={{ base: "full", md: 10 / 12 }} mx="auto" textAlign="center">
+                    <Image
+                        w="full"
+                        src={Baner}
+                        alt="Img not found"
+                    />
+                </Box>
+            </Flex>
+
+
+
+
+
         </>
     );
 }

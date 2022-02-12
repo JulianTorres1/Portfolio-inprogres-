@@ -1,77 +1,137 @@
-import { ReactElement } from 'react';
-import { Box, SimpleGrid, Icon,Container, Text, Stack, Flex } from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
+import React from "react";
+import {
+    chakra,
+    Box,
+    SimpleGrid,
+    Flex,
+    useColorModeValue,
+    Icon,
+} from "@chakra-ui/react";
 
-import { motion } from "framer-motion"
+import {FaCameraRetro, FaJava, FaLinux, FaReact} from 'react-icons/fa';
 
-interface FeatureProps {
-    title: string;
-    text: string;
-    icon: ReactElement;
-}
-
-const Feature = ({ title, text, icon }: FeatureProps) => {
+export default function Fgl() {
+    const Feature = (props) => {
+        return (
+            <Box>
+                <Flex
+                    alignItems="center"
+                    justifyContent="center"
+                    w={10}
+                    h={10}
+                    mb={5}
+                    rounded="full"
+                    color={useColorModeValue(`${props.color}.600`, `${props.color}.100`)}
+                    bg={useColorModeValue(`${props.color}.100`, `${props.color}.600`)}
+                >
+                    <Icon
+                        boxSize={20}
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                    >
+                        {props.icon}
+                    </Icon>
+                </Flex>
+                <chakra.h3
+                    mb={2}
+                    fontWeight="semibold"
+                    lineHeight="shorter"
+                    color={useColorModeValue("gray.900")}
+                >
+                    {props.title}
+                </chakra.h3>
+                <chakra.p
+                    fontSize="sm"
+                    color={useColorModeValue("gray.500", "gray.400")}
+                >
+                    {props.children}
+                </chakra.p>
+            </Box>
+        );
+    };
     return (
-        <Stack>
-            <Flex
-                w={16}
-                h={16}
-                align={'center'}
-                justify={'center'}
-                color={'white'}
-                rounded={'full'}
-                bg={'gray.100'}
-                mb={1}>
-                {icon}
-            </Flex>
-            <Text fontWeight={600}>{title}</Text>
-            <Text color={'gray.600'}>{text}</Text>
-        </Stack>
-    );
-};
-
-export default function SimpleThreeColumns() {
-    return (
-        <Container centerContent>
-            <Box m={5} maxW='3xl'>
-                <motion.a
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.8 }}
-                    style={{ x: 100 }}
-                />
-                <SimpleGrid columns={[3, 2, 2]} spacing={10}>
+        <Flex
+            bg={useColorModeValue("#F9FAFB", "gray.600")}
+            p={20}
+            w="auto"
+            justifyContent="center"
+            alignItems="center"
+        >
+            <Box
+                px={8}
+                py={20}
+                mx="auto"
+                bg={useColorModeValue("white", "gray.800")}
+                shadow="xl"
+            >
+                <Box marginBottom={20} textAlign={{ lg: "center" }}>
+                    <chakra.p
+                        mt={2}
+                        fontSize={{ base: "3xl", sm: "4xl" }}
+                        lineHeight="8"
+                        fontWeight="extrabold"
+                        letterSpacing="tight"
+                        color={useColorModeValue("gray.900")}
+                    >
+                        Technologies That I Use!
+                    </chakra.p>
 
 
+                </Box>
+
+
+                <SimpleGrid
+                    columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
+                    spacingX={{ base: 16, lg: 24 }}
+                    spacingY={20}
+                    mt={6}
+                >
                     <Feature
-                        icon={<Icon as={FcAssistant} w={10} h={10} />}
-                        title={'Java'}
-                        text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                        color="red"
+                        title="Java"
+                        icon={
+                            <FaJava/>
                         }
-                    />
+                    >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur cum ea eum fugiat ipsam minus omnis quae soluta, veritatis?
+                    </Feature>
+
                     <Feature
-                        icon={<Icon as={FcDonate} w={10} h={10} />}
-                        title={'ReactJS'}
-                        text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                        color="blue"
+                        title="React"
+                        icon={
+                            <FaReact/>
                         }
-                    />
+                    >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis dolorem eligendi iste labore neque, nostrum officiis possimus quasi veniam?
+                    </Feature>
+
                     <Feature
-                        icon={<Icon as={FcInTransit} w={10} h={10} />}
-                        title={'Unix/Linux '}
-                        text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                        color="yellow"
+                        title="Linux & Unix"
+                        icon={
+                            <FaLinux/>
                         }
-                    />
+                    >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aperiam id molestiae nisi officia quas quod saepe sequi similique!
+                    </Feature>
+
                     <Feature
-                        icon={<Icon as={FcInTransit} w={10} h={10} />}
-                        title={'Media & Grafics'}
-                        text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                        color="black"
+                        title="graphics and design"
+                        icon={
+                            <FaCameraRetro/>
                         }
-                    />
+
+                    >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquam distinctio illum iure nostrum perferendis quo reprehenderit saepe voluptatum.
+                    </Feature>
+
+
                 </SimpleGrid>
             </Box>
-        </Container>
+        </Flex>
     );
 }
+
