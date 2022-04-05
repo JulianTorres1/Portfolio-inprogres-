@@ -1,6 +1,6 @@
 import './App.css';
 
-// componets
+// imports componets
 
 import Navbar from './componets/NavBar';
 import Hero from './componets/Hero';
@@ -12,7 +12,7 @@ import  ContactForm from './componets/ContactForm';
 
 function App() {
   return (
-
+    // Place all te components in the Single page app 
       <box>
         <box><Navbar/></box>
         <box><Hero/></box>
@@ -23,15 +23,11 @@ function App() {
           <box>
               <Specs/>
           </box>
-
           <box>
               <ContactForm/>
           </box>
-
         <box><Footer/></box>
-
       </box>
-
   );
 }
 

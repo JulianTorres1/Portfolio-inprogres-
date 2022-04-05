@@ -1,24 +1,11 @@
-import Head from 'next/head';
 import {
     Box,
-    Center,
-    Image,
     Heading,
     Container,
     Text,
     Stack,
-    chakra,
     createIcon, Flex, useColorModeValue, Button,
 } from '@chakra-ui/react';
-
-//imgs
-
-import logo from '../img/logo.png';
-import Baner from '../img/project1.png'
-
-
-
-
 
 export default function Hero() {
 
@@ -33,36 +20,27 @@ export default function Hero() {
                 px={8}
                 py={20}
                 mx="auto"
-                bg='gray.80'
+                background='gray.80'
             >
                 <Box
-
+                    
                     w={{ base: "full", md: 3 / 12, xl: 9 / 12 }}
                     mx="auto"
-                    pr={{ md: 20 }}
+                    
 
                 >
-
-                    <Head>
-                        <link
-                            href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-                            rel="stylesheet"
-                        />
-                        <title>hola</title>
-                    </Head>
-
-                    <Container maxW={'3xl'} >
+                    <Container 
+                        maxW={'3xl'} 
+                        
+                    >
                         <Stack
                             as={Box}
                             textAlign={'center'}
                             spacing={{ base: 20, md: 0}}
                             py={{ base: 2, md: 5 }}>
 
-                            <Center>
-                                <Image boxSize='150px' src={logo} alt='img not found' />
-                            </Center>
-
                             <Heading
+                                align='center'
                                 fontWeight={600}
                                 fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                                 lineHeight={'110%'}>
@@ -71,15 +49,19 @@ export default function Hero() {
                                     Software Engineer
                                 </Text>
                             </Heading>
-                            <Text color={'gray.500'}>
+                            
+                            <Text
+                                
+                                textAlign='center' 
+                                color={'gray.500'}
+                                >
                                 Hello, I'm a Software Engineer, and web dev developer based in Colombia 🇨🇴!
                             </Text>
-
+                            
                             <box>
-
-
                                 <Button
-                                    mt={5}
+
+                                    mt={7}
                                     flex={1}
                                     fontSize={'sm'}
                                     rounded={'full'}
@@ -96,13 +78,18 @@ export default function Hero() {
                                     }}>
                                     Download CV
                                 </Button>
-
-
-
                             </box>
-
-
                         </Stack>
+
+                        {/* <Box
+                            w={{ base: "full", md: 3 / 12, xl: 5 / 12 }}
+                            mx="auto"
+                            mt={10}
+                        >
+                            <Center>
+                                <Image boxSize='220px' src={logo} alt='img not found' />
+                            </Center>
+                        </Box> */}
 
                     </Container>
 
@@ -114,13 +101,13 @@ export default function Hero() {
 
                     </Stack>
                 </Box>
-                <Box w={{ base: "full", md: 10 / 12 }} mx="auto" textAlign="center">
+                {/* <Box w={{ base: "full", md: 10 / 12 }} mx="auto" textAlign="center">
                     <Image
                         w="full"
                         src={Baner}
                         alt="Img not found"
                     />
-                </Box>
+                </Box> */}
             </Flex>
 
 
