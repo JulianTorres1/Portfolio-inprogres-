@@ -9,24 +9,28 @@ export default function socialProfileWithImageHorizontal() {
 
 
     return (
-        <Center paddingBottom={20}>
+        <Center
+            paddingBottom={20}
+            pt={0}
+        >
             <Stack
                 borderWidth="1px"
                 borderRadius="lg"
-                w={{ sm: '100%', md: '650px' }}
-                height={{ sm: '476px', md: '20rem' }}
+                w={{ sm: '100%', md: '50rem' }}
+                height={{ sm: '50rem', md: '20rem' }}
                 direction={{ base: 'column', md: 'row' }}
-
+                bg={'gray.100'}
                 boxShadow={'2xl'}
-                padding={6}>
+                padding={10}
+            >
                 <Stack
                     flex={1}
                     flexDirection="column"
                     justifyContent="center"
                     alignItems="center"
-                    p={1}
-                    pt={2}>
-
+                    p={3}
+                    pt={4}
+                >
                     <Text
                         fontSize={20}
                         textAlign={'center'}
@@ -70,8 +74,9 @@ export default function socialProfileWithImageHorizontal() {
                             flex={1}
                             fontSize={'sm'}
                             rounded={'full'}
+                            bg={'gray.300'}
                             _focus={{
-                                bg: 'gray.200',
+                                bg: 'gray.500',
                             }}>
                             Message
                         </Button>

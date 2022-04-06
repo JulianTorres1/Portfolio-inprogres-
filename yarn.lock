@@ -1777,6 +1777,21 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@fontsource/ibm-plex-mono@^4.5.7":
+  "integrity" "sha512-AiWuSjYNv+RPPBxvkBrayTYWidWLxlBbH36jAusLMO7lBauPkJLd2+b8lnOYVsAz3as3ZRkhtOpMTLvXw5ZKRQ=="
+  "resolved" "https://registry.npmjs.org/@fontsource/ibm-plex-mono/-/ibm-plex-mono-4.5.7.tgz"
+  "version" "4.5.7"
+
+"@fontsource/open-sans@^4.5.8":
+  "integrity" "sha512-3b94XDdRLqL7OlE7OjWg/4pgG825Juw8PLVEDm6h5pio0gMU89ICxfatGxHsBxMGfqad+wnvdmUweZWlELDFpQ=="
+  "resolved" "https://registry.npmjs.org/@fontsource/open-sans/-/open-sans-4.5.8.tgz"
+  "version" "4.5.8"
+
+"@fontsource/source-code-pro@^4.5.6":
+  "integrity" "sha512-idYGw+8gEyec58O5LFkJecscaQDJmTMrrRBcmrYTbS2fhSyEuaq1xtTpG8QOQCvW5CA0XrSpWVfA/1HwJjm6Fw=="
+  "resolved" "https://registry.npmjs.org/@fontsource/source-code-pro/-/source-code-pro-4.5.6.tgz"
+  "version" "4.5.6"
+
 "@humanwhocodes/config-array@^0.9.2":
   "integrity" "sha512-3xSMlXHh03hCcCmFc0rbKp3Ivt2PFEJnQUJDDMTJQ2wkECZWdq4GePs2ctc5H8zV+cHPaq8k2vU8mrQjA6iHdQ=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.9.3.tgz"

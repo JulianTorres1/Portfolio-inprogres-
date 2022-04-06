@@ -6,10 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 //chakra UI
 import { ChakraProvider } from '@chakra-ui/react'
+import theme from './componets/theme';
 
+import "@fontsource/source-code-pro/400-italic.css"
 
 ReactDOM.render(
-    <ChakraProvider>
+    <ChakraProvider theme={theme} >
         <App />
     </ChakraProvider>,
   document.getElementById('root')
