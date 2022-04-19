@@ -2,6 +2,7 @@ import {
     Box,
     Heading,
     Container,
+    AspectRatio,
     Text,
     Stack,
     Image,
@@ -22,87 +23,87 @@ export default function Hero() {
                 <Box
                     boxSize='95%'
                     pt={3}
+                    mb={10}
                 >
-                    <Image
-                        src={banerIMG}
-                        alt='Dan Abramov'
-                        borderWidth="1px"
-                        borderRadius="lg"
-                    />
-                    <span>
-                        <Box
-                            
+                    <Box>
+                        <Flex
+                            direction={{ base: "column", md: "row" }}
+                            bg={useColorModeValue("brand.500")}
+                            px={8}
+                            py={20}
+                            flexDirection={'column'}
+                            mx="auto"
+                            backgroundImage={banerIMG}
+                            backgroundPosition={'center'}
+                            bgSize={'96%'}
+                            bgRepeat={'no-repeat'}
+                            backgroundAttachment={'fill'}
+                            backgroundRadius={'5px'}
                         >
-
-                            <Flex
-                                direction={{ base: "column", md: "row" }}
-                                bg={useColorModeValue("brand.500")}
-                                px={8}
-                                py={20}
+                            <Box
+                                w={{ base: "full", md: 3 / 12, xl: 9 / 12 }}
                                 mx="auto"
+
                             >
-                                <Box
-                                    w={{ base: "full", md: 3 / 12, xl: 9 / 12 }}
-                                    mx="auto"
+                                <Container
+                                    maxW={'3xl'}
                                 >
-                                    <Container
-                                        maxW={'3xl'}
-                                    >
-                                        <Stack
-                                            as={Box}
-                                            textAlign={'center'}
-                                            spacing={{ base: 20, md: 0}}
-                                            py={{ base: 2, md: 5 }}
-                                        >
-                                            <Heading
-                                                align='center'
-                                                fontWeight={600}
-                                                fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-                                                lineHeight={'110%'}>
-                                                Nicolas Torres <br />
-                                                <Text bgGradient='linear(to-l, #000000, #F6834E, #000000)' bgClip='text' fontSize='30px' as={'span'} >
-                                                    Software Engineer
-                                                </Text>
-                                            </Heading>
-                                            <Text
-                                                textAlign='center'
-                                                color={'gray.500'}
-                                            >
-                                                Hello, I'm a Software Engineer, and web dev developer based in Colombia 🇨🇴!
-                                            </Text>
-                                            <box>
-                                                <Button
-                                                    mt={7}
-                                                    flex={1}
-                                                    fontSize={'sm'}
-                                                    rounded={'full'}
-                                                    bg={'#D9541B'}
-                                                    color={'white'}
-                                                    boxShadow={
-                                                        '0px 1px 25px -5px rgb(217 84 27 / 48%), 0 10px 10px -5px rgb(245 118 55 / 43%)'
-                                                    }
-                                                    _hover={{
-                                                        bg: '#F57637',
-                                                    }}
-                                                    _focus={{
-                                                        bg: '#F57637',
-                                                    }}>
-                                                    Download CV
-                                                </Button>
-                                            </box>
-                                        </Stack>
-                                    </Container>
                                     <Stack
-                                        direction={{ base: "column", sm: "row" }}
-                                        mb={{ base: 4, md: 8 }}
-                                        spacing={2}
+                                        as={Box}
+                                        textAlign={'left'}
+                                        spacing={{ base: 20, md: 0}}
+                                        py={{ base: 2, md: 5 }}
                                     >
+                                        <Heading
+                                            align='left'
+                                            fontWeight={600}
+                                            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+                                            lineHeight={'110%'}>
+                                            Nicolas Torres <br />
+                                            <Text bgGradient='linear(to-l, #000000, #F6834E, #000000)' bgClip='text' fontSize='30px' as={'span'} >
+                                                Software Engineer
+                                            </Text>
+                                        </Heading>
+                                        <Text
+                                            textAlign='center'
+                                            color={'gray.500'}
+                                        >
+                                            Hello, I'm a Software Engineer, and web dev developer based in Colombia 🇨🇴!
+                                        </Text>
+                                        <box>
+                                            <Button
+                                                mt={7}
+                                                flex={1}
+                                                fontSize={'sm'}
+                                                rounded={'full'}
+                                                bg={'#D9541B'}
+                                                color={'white'}
+                                                boxShadow={
+                                                    '0px 1px 25px -5px rgb(217 84 27 / 48%), 0 10px 10px -5px rgb(245 118 55 / 43%)'
+                                                }
+                                                _hover={{
+                                                    bg: '#F57637',
+                                                }}
+                                                _focus={{
+                                                    bg: '#F57637',
+                                                }}>
+                                                Download CV
+                                            </Button>
+                                        </box>
                                     </Stack>
-                                </Box>
-                            </Flex>
+                                </Container>
+                                <Stack
+                                    direction={{ base: "column", sm: "row" }}
+                                    mb={{ base: 4, md: 8 }}
+                                    spacing={2}
+                                >
+                                </Stack>
+                            </Box>
                             <UserCard/>
-                        </Box>
-                    </span>
+                        </Flex>
+                        
+                    </Box>
+                    
                 </Box>
             </Center>
         </>

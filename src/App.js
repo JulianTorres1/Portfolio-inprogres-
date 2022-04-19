@@ -8,6 +8,9 @@ import Footer from './componets/footer';
 import ProjectGrid from './componets/ProjectGrid';
 import Specs from './componets/specs';
 import  ContactForm from './componets/ContactForm';
+import { Box } from '@mui/material';
+import UserCard from './componets/UserCard';
+import BanerPhoto from './componets/banerPhoto';
 
 function App() {
   return (
