@@ -13,7 +13,6 @@ export default function socialProfileWithImageHorizontal() {
     return (
         <Center>
             <Box
-                bg={'white'}
                 borderWidth="1px"
                 borderRadius="lg"
                 w={{ sm: '100%', md: '50rem' }}
