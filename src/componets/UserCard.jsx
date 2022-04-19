@@ -21,6 +21,7 @@ export default function socialProfileWithImageHorizontal() {
                     direction={{ base: 'column', md: 'row' }}
                     boxShadow={'2xl'}
                     padding={10}
+                    backgroundColor="white"
                 >
                     <Stack
                         flex={1}
