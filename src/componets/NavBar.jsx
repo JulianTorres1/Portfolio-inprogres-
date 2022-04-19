@@ -19,10 +19,6 @@ import { Instagram, Twitter } from 'react-feather';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-
-
-//hoppla
-
 //Component
 export default function Nav() {
     const { colorMode, toggleColorMode } = useColorMode();

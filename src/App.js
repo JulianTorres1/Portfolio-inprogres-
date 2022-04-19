@@ -18,6 +18,7 @@ function App() {
       <box>
         <box><Navbar/></box>
         <box><Hero/></box>
+          <Box><UserCard/></Box>
           <box>
               <ProjectGrid/>
           </box>

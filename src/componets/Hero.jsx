@@ -29,33 +29,29 @@ export default function Hero() {
                         <Flex
                             direction={{ base: "column", md: "row" }}
                             bg={useColorModeValue("brand.500")}
-                            px={8}
-                            py={20}
                             flexDirection={'column'}
-                            mx="auto"
-                            backgroundImage={banerIMG}
                             backgroundPosition={'center'}
                             bgSize={'96%'}
                             bgRepeat={'no-repeat'}
                             backgroundAttachment={'fill'}
                             backgroundRadius={'5px'}
+                            pt={5}
+                            pb={5}
                         >
                             <Box
                                 w={{ base: "full", md: 3 / 12, xl: 9 / 12 }}
                                 mx="auto"
-
                             >
                                 <Container
                                     maxW={'3xl'}
                                 >
                                     <Stack
                                         as={Box}
-                                        textAlign={'left'}
+                                        textAlign={'center'}
                                         spacing={{ base: 20, md: 0}}
                                         py={{ base: 2, md: 5 }}
                                     >
                                         <Heading
-                                            align='left'
                                             fontWeight={600}
                                             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
                                             lineHeight={'110%'}>
@@ -99,11 +95,10 @@ export default function Hero() {
                                 >
                                 </Stack>
                             </Box>
-                            <UserCard/>
                         </Flex>
-                        
+
                     </Box>
-                    
+
                 </Box>
             </Center>
         </>
