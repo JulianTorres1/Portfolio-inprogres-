@@ -10,7 +10,7 @@ import Specs from './componets/specs';
 import  ContactForm from './componets/ContactForm';
 import { Box } from '@mui/material';
 import UserCard from './componets/UserCard';
-import BanerPhoto from './componets/banerPhoto';
+import RepoCard from './componets/RepoCard';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <box><Hero/></box>
           <Box><UserCard/></Box>
           <box>
+              <RepoCard username="JulianTorres1" />
               <ProjectGrid/>
           </box>
           <box>

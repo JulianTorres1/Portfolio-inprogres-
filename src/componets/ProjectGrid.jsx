@@ -55,6 +55,7 @@ class HelloMessage extends React.Component {
                         <Box  ><ProjectCard/></Box>
                         <Box  ><ProjectCard/></Box>
                     </SimpleGrid>
+
                 </Container>
             </box>
         );
